@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { PersonListGet } from './components/PersonListGet'
+import { PersonListPost } from './components/PersonListPost'
+import { PersonListDelete } from './components/PersonListDelete'
+import { GitHubUsers } from './components/GitHubUsers'
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <PersonListGet />
+        <hr />
+        <PersonListPost />
+        <hr />
+        <PersonListDelete />
+        <hr />
+        <GitHubUsers />
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App
