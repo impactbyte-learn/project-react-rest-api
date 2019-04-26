@@ -9,7 +9,7 @@ const Card = props => {
       <img alt="avatar" style={{ width: '70px' }} src={props.avatar_url} />
       <div>
         <div style={{ fontWeight: 'bold' }}>{props.name}</div>
-        <a href={props.blog} target="_blank">
+        <a href={props.blog} target="_blank" rel="noopener noreferrer">
           {props.blog}
         </a>
       </div>
